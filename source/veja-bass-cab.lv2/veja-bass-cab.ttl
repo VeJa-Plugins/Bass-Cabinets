@@ -1,0 +1,141 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix mod: <http://moddevices.com/ns/modgui#>.
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<http://VeJaPlugins.com/plugins/Release/BassCab>
+a lv2:Plugin, lv2:SimulatorPlugin;
+
+doap:name "Bass Cabinets";
+
+doap:developer [
+    foaf:name "Forward Audio";
+    foaf:homepage <>;
+    foaf:mbox <mailto:jan@moddevices.com>;
+    ];
+
+doap:maintainer [
+    foaf:name "Forward Audio";
+    foaf:homepage <http://forward-audio.com>;
+    foaf:mbox <mailto:jan@moddevices.com>;
+    ];
+
+    lv2:minorVersion 1;
+    lv2:microVersion 0;
+
+rdfs:comment """
+Why you need the ENG 212 package!
+We believe that modern guitar players should not be bothered to invest too much time into finding the right tone. That‘s why we packaged this IR pack only with what we call „Super Blends“. Every IR you get here is already mixed out of, up to 4 mics, in some cases even dozens of different mics on different speakers.
+
+With this pack you‘ll be able to find a great sounding tone within seconds.
+
+3 variations to fit in every mix!
+Each IR blend in the pack is available in 3 different variations: Tube, Solid (State) & S.P.A.R.C.
+
+S.P.A.R.C.: The S.P.A.R.C. capturing method is a new technique developed here at forward audio. It produces IRs, which bear an uncanny resemblance to a real recording setup, sounding much more pleasant with an overall balanced frequency response. In most mixing situations this will be your go to variation, which will outperform the others. It‘s especially pleasing with high gain sounds and it‘s effects are better noticeable in the mix than soloed.
+
+Tube: Captured with a modded Peavey Windsor tube amp, these variations provide a warm low end response and subtle tube distortions. Perfect for the use with amp simulations to add organic tube warmth.
+
+Solid (State): Captured with a custom linear solid state amp to provide an uncolored representation of the cabinet. Perfect for the use with a tube amp recorded through a load box.
+
+Features:
+Modeled by Forward Audio
+""";
+
+lv2:port
+[
+    a lv2:AudioPort, lv2:InputPort;
+    lv2:index 0;
+    lv2:symbol "In";
+    lv2:name "Input";
+],
+[
+    a lv2:AudioPort, lv2:OutputPort;
+    lv2:index 1;
+    lv2:symbol "Out";
+    lv2:name "Output";
+],
+[
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 2;
+    lv2:symbol "Attenuation";
+    lv2:name "Attenuation";
+    lv2:default 0;
+    lv2:minimum -90;
+    lv2:maximum 0;
+],
+[
+    a lv2:InputPort, lv2:ControlPort;
+    lv2:index 3;
+    lv2:symbol "Model";
+    lv2:name "Model";
+    lv2:default 0;
+    lv2:minimum 0;
+    lv2:maximum 13;
+    lv2:portProperty lv2:integer;
+    lv2:portProperty lv2:enumeration ;
+    lv2:scalePoint
+        [
+        rdfs:label "IR 1";
+        rdf:value 0
+    ],
+    [
+        rdfs:label "IR 2";
+        rdf:value 1
+    ],
+    [
+        rdfs:label "IR 3";
+        rdf:value 2
+    ],
+    [
+        rdfs:label "IR 4";
+        rdf:value 3
+    ],
+    [
+        rdfs:label "IR 5";
+        rdf:value 4
+    ],
+    [
+        rdfs:label "IR 6";
+        rdf:value 5
+    ],
+    [
+        rdfs:label "IR 7";
+        rdf:value 6
+    ],
+    [
+        rdfs:label "IR 8";
+        rdf:value 7
+    ],
+    [
+        rdfs:label "IR 9";
+        rdf:value 8
+    ],
+    [
+        rdfs:label "IR 10";
+        rdf:value 9
+    ],
+    [
+        rdfs:label "IR 11";
+        rdf:value 10
+    ],
+    [
+        rdfs:label "IR 12";
+        rdf:value 11
+    ],
+    [
+        rdfs:label "IR 13";
+        rdf:value 12
+    ],
+    [
+        rdfs:label "IR 14";
+        rdf:value 13
+    ],
+    [
+        rdfs:label "IR 15";
+        rdf:value 14
+    ]
+].
