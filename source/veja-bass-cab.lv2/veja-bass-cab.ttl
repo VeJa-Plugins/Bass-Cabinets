@@ -12,14 +12,14 @@ a lv2:Plugin, lv2:SimulatorPlugin;
 doap:name "Bass Cabinets";
 
 doap:developer [
-    foaf:name "Forward Audio";
+    foaf:name "VeJa plugins";
     foaf:homepage <>;
     foaf:mbox <mailto:jan@moddevices.com>;
     ];
 
 doap:maintainer [
     foaf:name "Forward Audio";
-    foaf:homepage <http://forward-audio.com>;
+    foaf:homepage <http://moddevices.com>;
     foaf:mbox <mailto:jan@moddevices.com>;
     ];
 
@@ -27,22 +27,7 @@ doap:maintainer [
     lv2:microVersion 0;
 
 rdfs:comment """
-Why you need the ENG 212 package!
-We believe that modern guitar players should not be bothered to invest too much time into finding the right tone. That‘s why we packaged this IR pack only with what we call „Super Blends“. Every IR you get here is already mixed out of, up to 4 mics, in some cases even dozens of different mics on different speakers.
 
-With this pack you‘ll be able to find a great sounding tone within seconds.
-
-3 variations to fit in every mix!
-Each IR blend in the pack is available in 3 different variations: Tube, Solid (State) & S.P.A.R.C.
-
-S.P.A.R.C.: The S.P.A.R.C. capturing method is a new technique developed here at forward audio. It produces IRs, which bear an uncanny resemblance to a real recording setup, sounding much more pleasant with an overall balanced frequency response. In most mixing situations this will be your go to variation, which will outperform the others. It‘s especially pleasing with high gain sounds and it‘s effects are better noticeable in the mix than soloed.
-
-Tube: Captured with a modded Peavey Windsor tube amp, these variations provide a warm low end response and subtle tube distortions. Perfect for the use with amp simulations to add organic tube warmth.
-
-Solid (State): Captured with a custom linear solid state amp to provide an uncolored representation of the cabinet. Perfect for the use with a tube amp recorded through a load box.
-
-Features:
-Modeled by Forward Audio
 """;
 
 lv2:port
