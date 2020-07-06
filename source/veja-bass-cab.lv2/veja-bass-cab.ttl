@@ -18,7 +18,7 @@ doap:developer [
     ];
 
 doap:maintainer [
-    foaf:name "Forward Audio";
+    foaf:name "VeJa plugins";
     foaf:homepage <http://moddevices.com>;
     foaf:mbox <mailto:jan@moddevices.com>;
     ];
