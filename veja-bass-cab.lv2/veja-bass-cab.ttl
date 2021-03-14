@@ -27,7 +27,7 @@ doap:maintainer [
     lv2:microVersion 0;
 
 rdfs:comment """
-
+A Bass cabinet simulator that offers different sounds comming from a fine selection of bass cabinets
 """;
 
 lv2:port
@@ -59,68 +59,44 @@ lv2:port
     lv2:name "Model";
     lv2:default 0;
     lv2:minimum 0;
-    lv2:maximum 13;
+    lv2:maximum 9;
     lv2:portProperty lv2:integer;
     lv2:portProperty lv2:enumeration ;
     lv2:scalePoint
         [
-        rdfs:label "IR 1";
+        rdfs:label "Ampeg Classic";
         rdf:value 0
     ],
     [
-        rdfs:label "IR 2";
+        rdfs:label "Ashtown ABM Bright";
         rdf:value 1
     ],
     [
-        rdfs:label "IR 3";
+        rdfs:label "Ashtown ABM Deep";
         rdf:value 2
     ],
     [
-        rdfs:label "IR 4";
+        rdfs:label "Ashtown MAG";
         rdf:value 3
     ],
     [
-        rdfs:label "IR 5";
+        rdfs:label "BES Gorm";
         rdf:value 4
     ],
     [
-        rdfs:label "IR 6";
+        rdfs:label "Kallien Grueger Bright";
         rdf:value 5
     ],
     [
-        rdfs:label "IR 7";
+        rdfs:label "Kallien Grueger Dark";
         rdf:value 6
     ],
     [
-        rdfs:label "IR 8";
+        rdfs:label "Rondall";
         rdf:value 7
     ],
     [
-        rdfs:label "IR 9";
+        rdfs:label "Brittvile";
         rdf:value 8
-    ],
-    [
-        rdfs:label "IR 10";
-        rdf:value 9
-    ],
-    [
-        rdfs:label "IR 11";
-        rdf:value 10
-    ],
-    [
-        rdfs:label "IR 12";
-        rdf:value 11
-    ],
-    [
-        rdfs:label "IR 13";
-        rdf:value 12
-    ],
-    [
-        rdfs:label "IR 14";
-        rdf:value 13
-    ],
-    [
-        rdfs:label "IR 15";
-        rdf:value 14
     ]
 ].
