@@ -1,5 +1,5 @@
 #!/usr/bin/make -f
-# Makefile for FreqGen.v2 #
+# Makefile for veja-bass-cablv2 #
 # ----------------------- #
 #
 
