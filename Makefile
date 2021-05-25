@@ -1,10 +1,10 @@
 #!/usr/bin/make -f
-# Makefile for veja-bass-cab.lv2 #
+# Makefile for FreqGen.lv2 #
 # --------------------------------- #
 
 include Makefile.mk
 
-NAME = veja-bass-cab
+NAME = freq-gen
 
 # --------------------------------------------------------------
 # Installation path
@@ -18,7 +18,7 @@ COMPLETE_INSTALL_PATH = $(DESTDIR)$(INSTALL_PATH)/$(NAME).lv2
 all: build
 build: $(NAME)-build
 
-cabsim.wisdom:
+freq-gen.wisdom:
 	@echo "Generating cabsim.wisdom file, this might take a while..."
 	fftwf-wisdom -v -n -x -o $@ \
 	rof128 rob128 rof192 rob192 rof256 rob256 rof384 rob384 rof512 rob512 rof640 rob640 rof768 rob768 \
